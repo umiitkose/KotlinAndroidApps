@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hesap Makinesi</string>
+    <string name="exponentiate">Üs Alma</string>
+    <string name="factorial">Faktoriyel</string>
+    <string name="sqrt">Karekök</string>
+    <string name="moreoperation">Diğer İşlemler</string>
+</resources>

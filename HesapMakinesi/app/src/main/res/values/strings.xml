@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="exponentiate">Exponentiate</string>
+    <string name="factorial">Factorial</string>
+    <string name="sqrt">Square Root</string>
+    <string name="moreoperation">More Operation</string>
+
+</resources>
