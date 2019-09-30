@@ -4,5 +4,5 @@ import com.google.gson.annotations.SerializedName
 
 data class Picture(
     @SerializedName("large")
-    var thumbnail:String
+    var large:String
 )

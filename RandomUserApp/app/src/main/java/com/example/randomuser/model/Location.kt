@@ -4,8 +4,8 @@ import com.google.gson.annotations.SerializedName
 
 data class Location(
 
-    @SerializedName("street")
-    var street: String,
+    @SerializedName("country")
+    var country: String,
     @SerializedName("city")
     var city: String
 
