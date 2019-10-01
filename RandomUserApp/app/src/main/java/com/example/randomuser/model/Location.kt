@@ -1,6 +1,7 @@
 package com.example.randomuser.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Location(
 
@@ -9,5 +10,4 @@ data class Location(
     @SerializedName("city")
     var city: String
 
-
-    )
+): Serializable
