@@ -55,6 +55,33 @@ abstract class QuestionDB: RoomDatabase() {
                     answer ="Hepsi"
                 )
                 dao?.addQuestion(question)
+                var question1 = Question(
+                    question ="Android uygulama yazabilmek için hangi programlama dilini bilgmek gerekir.",
+                    optionA ="Java",
+                    optionB ="Kotlin",
+                    optionC ="Kotlin",
+                    optionD = "Hepsi",
+                    answer ="Hepsi"
+                )
+                dao?.addQuestion(question1)
+                var question2 = Question(
+                    question ="Android uygulama yazabilmek için hangi programlama dilini bilgmek gerekir.",
+                    optionA ="Java",
+                    optionB ="Kotlin",
+                    optionC ="Kotlin",
+                    optionD = "Hepsi",
+                    answer ="Hepsi"
+                )
+                dao?.addQuestion(question2)
+                var question3 = Question(
+                    question ="Android uygulama yazabilmek için hangi programlama dilini bilgmek gerekir.",
+                    optionA ="Java",
+                    optionB ="Kotlin",
+                    optionC ="Kotlin",
+                    optionD = "Hepsi",
+                    answer ="Hepsi"
+                )
+                dao?.addQuestion(question3)
                 return null
             }
         }

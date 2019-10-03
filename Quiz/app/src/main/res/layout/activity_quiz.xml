@@ -6,4 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".ui.quiz.QuizActivity">
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Soru Burada Yer Alacaktır"
+                android:gravity="center"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_grup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_below="@id/tv_question"
+                app:chipSpacing="16dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_option_a"
+                    style="@style/CheckableChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option A"
+                    />
+                <com.google.android.material.chip.Chip
+                    style="@style/CheckableChip"
+                    android:id="@+id/chip_option_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option B"
+                    />
+                <com.google.android.material.chip.Chip
+                    style="@style/CheckableChip"
+                    android:id="@+id/chip_option_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option C"
+                    />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_option_d"
+                    style="@style/CheckableChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option D"
+                    />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_next"
+                android:layout_alignParentBottom="true"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/colorAccent"
+                android:text="Seç"
+                />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
