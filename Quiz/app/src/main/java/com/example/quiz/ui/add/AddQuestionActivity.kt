@@ -22,7 +22,7 @@ class AddQuestionActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(AddQuestionViewModel::class.java)
 
         prepareSpinner()
-        
+
         bt_save.setOnClickListener {
             val question = et_question.text.toString()
             val optionA = et_option_a.text.toString()
