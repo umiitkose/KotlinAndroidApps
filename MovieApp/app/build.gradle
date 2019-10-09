@@ -23,7 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    dataBinding{
+    dataBinding {
         enabled = true
     }
 }
@@ -45,6 +45,10 @@ dependencies {
 
     //architecture
     implementation "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-plus:17.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
     kapt "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle_version"
     //room
     implementation "androidx.room:room-runtime:$versions.room_version"
