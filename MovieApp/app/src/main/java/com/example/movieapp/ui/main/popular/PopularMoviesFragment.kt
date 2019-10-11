@@ -24,7 +24,7 @@ class PopularMoviesFragment : BaseVMFragment<PopularMoviesViewModel>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewModel.getPopularMovies()?.observe(this, Observer {
 
-            
+
 
 
         })

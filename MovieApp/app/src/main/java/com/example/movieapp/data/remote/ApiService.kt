@@ -22,7 +22,6 @@ interface ApiService {
     @GET("movie/{id}")
     fun getMovieDetails(@Path("id") movieId: Int): Call<MovieDetailResponse>
 
-
     //Videos
     @GET("movie/{id}/videos")
     fun getMovieResponse(@Path("id") movieId: Int): Call<MovieVideoResponse>
