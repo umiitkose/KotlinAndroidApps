@@ -6,7 +6,7 @@
     <data>
         <variable
             name="movie"
-            type="" />
+            type="com.example.movieapp.model.movie.MovieResults" />
     </data>
 
 <com.google.android.material.card.MaterialCardView
@@ -25,6 +25,7 @@
             android:layout_height="220dp"
             android:scaleType="fitXY"
             android:src="@drawable/ic_launcher_background"
+            app:imageUrl="@{movie.poster_path}"
             android:clickable="true"
             android:focusable="true"
             android:background="?attr/selectableItemBackgroundBorderless"
@@ -38,7 +39,7 @@
             android:singleLine="true"
             android:padding="8dp"
             android:textColor="#555"
-            tools:text="Movie Text"
+            android:text="@{movie.original_title}"
             android:textStyle="bold"
             android:textSize="14sp"
             />
