@@ -5,7 +5,9 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.example.movieapp.util.Constans
 
+
 object ImageBindingAdapter {
+
     @BindingAdapter("imageUrl")
     @JvmStatic
     fun loadImage(imageView: ImageView, url: String ){

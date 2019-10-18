@@ -19,7 +19,7 @@ import com.example.movieapp.util.gone
 import com.example.movieapp.util.visible
 import kotlinx.android.synthetic.main.fragment_popular_movies.*
 
-class PopularMoviesFragment : BaseVMFragment<PopularMoviesViewModel>() , MovieAdapter.onMovieClickListener{
+class PopularMoviesFragment : BaseVMFragment<PopularMoviesViewModel>() , MovieAdapter.OnMovieClickListener{
 
 
     private lateinit var adapter: MovieAdapter

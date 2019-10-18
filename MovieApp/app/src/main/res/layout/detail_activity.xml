@@ -35,8 +35,8 @@
                 <ImageView
                     android:id="@+id/detail_backdrop"
                     android:layout_width="match_parent"
-                    imageUrl="@{movie.backdrop_path}"
                     android:layout_height="235dp"
+                    app:imageUrl="@{movie.backdrop_path}"
                     android:scaleType="fitXY"
                     app:layout_collapseMode="parallax"
                     tools:background="@color/colorPrimaryDark"/>
@@ -67,7 +67,7 @@
                         <ImageView
                             android:id="@+id/movie_detail_poster_path"
                             android:layout_width="100dp"
-                            app:imageUrl="@{movie.poster_path}"
+                           app:imageUrl="@{movie.poster_path}"
                             android:layout_height="125dp"
                             android:background="@color/colorPrimary"
                             android:scaleType="centerCrop"
@@ -97,7 +97,6 @@
                             android:textAppearance="@style/TextAppearance.AppCompat.Title"
                             android:textColor="@android:color/white"
                             tools:text="Movie Title" />
-
 
                     </LinearLayout>
                 </LinearLayout>

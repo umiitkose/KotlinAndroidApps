@@ -5,15 +5,15 @@ import android.os.Bundle
 import com.example.movieapp.R
 import com.example.movieapp.common.BaseActivity
 import com.example.movieapp.common.ViewPagerAdapter
-import com.example.movieapp.databinding.ActivityDetailBinding
+import com.example.movieapp.databinding.DetailActivityBinding
 import com.example.movieapp.model.movie.MovieResults
 import com.example.movieapp.util.Constans
 import com.google.android.material.appbar.AppBarLayout
-import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.detail_activity.*
 
-class DetailActivity : BaseActivity<ActivityDetailBinding,DetailViewModel>() {
+class DetailActivity : BaseActivity<DetailActivityBinding ,DetailViewModel>() {
 
-    override fun getLayoutRes(): Int = R.layout.activity_detail
+    override fun getLayoutRes(): Int = R.layout.detail_activity
 
     override fun getViewModel(): Class<DetailViewModel> = DetailViewModel::class.java
 

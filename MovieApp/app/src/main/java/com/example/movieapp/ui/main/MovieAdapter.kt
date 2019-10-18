@@ -1,7 +1,7 @@
 package com.example.movieapp.ui.main
 
 import android.view.LayoutInflater
-import android.view.View
+
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -11,9 +11,9 @@ import com.example.movieapp.model.movie.MovieResults
 
 class MovieAdapter: ListAdapter<MovieResults,MovieAdapter.ViewHolder>(DIFF_CALLBACK) {
 
-    private lateinit var onMovieClickListener: onMovieClickListener
+     private lateinit var onMovieClickListener: OnMovieClickListener
 
-    fun setOnMovieClickListener(onMovieClickListener: onMovieClickListener){
+    fun setOnMovieClickListener(onMovieClickListener: OnMovieClickListener){
         this.onMovieClickListener = onMovieClickListener
     }
 
@@ -23,7 +23,7 @@ class MovieAdapter: ListAdapter<MovieResults,MovieAdapter.ViewHolder>(DIFF_CALLB
     override fun onBindViewHolder(holder: ViewHolder, position: Int)= holder.bind(getItem(position))
 
 
-    class ViewHolder(val binding: ItemMovieBinding, onMovieClickListener: onMovieClickListener): RecyclerView.ViewHolder(binding.root){
+    class ViewHolder(val binding: ItemMovieBinding, onMovieClickListener: OnMovieClickListener): RecyclerView.ViewHolder(binding.root){
 
         init {
             binding.root.setOnClickListener {
@@ -33,7 +33,7 @@ class MovieAdapter: ListAdapter<MovieResults,MovieAdapter.ViewHolder>(DIFF_CALLB
 
         companion object{
 
-            fun create(inflater: LayoutInflater, parent: ViewGroup, onMovieClickListener: onMovieClickListener): ViewHolder{
+            fun create(inflater: LayoutInflater, parent: ViewGroup, onMovieClickListener: OnMovieClickListener): ViewHolder{
                 val itemMovieBinding = ItemMovieBinding.inflate(inflater,parent, false)
 
                 return ViewHolder(itemMovieBinding,onMovieClickListener)
@@ -59,7 +59,7 @@ class MovieAdapter: ListAdapter<MovieResults,MovieAdapter.ViewHolder>(DIFF_CALLB
         }
     }
 
-    interface onMovieClickListener{
+    interface OnMovieClickListener{
         fun onMovieClick(movieResults: MovieResults)
     }
 }
